@@ -6,7 +6,7 @@ def rffi_run:
     
 def ctypes_run:
     import ctypes
-    testlib = ctypes.CDLL('testlib.so)
+    testlib = ctypes.CDLL('testlib.so')
     testlib.myprint()
 
 def cffi_run:
