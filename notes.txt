@@ -1,0 +1,91 @@
+from rpython.rlib.entrypoint import entrypoint_highlevel 
+from rpython.rtyper.lltypesystem import rffi, lltype
+from rpython.rtyper.lltypesystem.lloperation import llop
+
+@entrypoint_highlevel('main', [rffi.CCHARP], c_name='pixie_init')
+def pypy_execute_source(ll_progname):
+    from target import init_vm
+    progname = rffi.charp2str(ll_progname)
+    init_vm(progname)
+    res = 0
+    return rffi.cast(rffi.INT, res)
+
+@entrypoint_highlevel('main', [rffi.CCHARP], c_name='pixie_execute_source')
+def pypy_execute_source(ll_source):
+    from target import EvalFn, run_with_stacklets
+    source = rffi.charp2str(ll_source)
+    f = EvalFn(source)
+    run_with_stacklets.invoke([f])
+    res = 0
+return rffi.cast(rffi.INT, res)
+
+Example code can be found in:
+ pixie/pixie/vm/libs/ffi.py
+
+
+
+# Simple sample of LIBFFI usage in pypy/rpython
+
+import sys
+from rpython.rtyper.lltypesystem import rffi, lltype
+from rpython.rlib import jit_libffi, rdynload, clibffi
+
+def entry_point(argv):
+    lib = rdynload.dlopen('libSDL.so')
+    SDL_Init = rdynload.dlsym(lib, "SDL_Init")
+
+    argc = 1
+
+    # The cif is initialized with the stuff needed to call the function
+    # In pixie the cif was built during the first call to the function.
+    exchange_size = 0
+    exchange_arg0 = argc * rffi.sizeof(rffi.CCHARP)
+    exchange_result = exchange_arg0
+    # ARG[0]
+    exchange_result = exchange_size
+    exchange_size  += rffi.sizeof(rffi.LONG)
+    # RETVAL
+    exchange_result = exchange_size
+    exchange_size  += rffi.sizeof(rffi.LONG)
+
+    cif = lltype.malloc(jit_libffi.CIF_DESCRIPTION, 1, flavor='raw')
+    cif.abi = clibffi.FFI_DEFAULT_ABI
+    cif.nargs = argc
+    cif.rtype = clibffi.cast_type_to_ffitype(rffi.LONG)
+
+    atypes = lltype.malloc(clibffi.FFI_TYPE_PP.TO, argc, flavor='raw')
+    atypes[0] = clibffi.cast_type_to_ffitype(rffi.LONG)
+
+    cif.atypes = atypes
+    cif.exchange_size = exchange_size
+    cif.exchange_result = exchange_result
+    cif.exchange_result_libffi = exchange_result
+    cif.exchange_args[0] = exchange_arg0
+    jit_libffi.jit_ffi_prep_cif(cif)
+
+
+    # Exchange buffer is built for every call. Filled with arguments that are passed to the function.
+    exc = lltype.malloc(rffi.CCHARP.TO, cif.exchange_size, flavor='raw')
+    offset_p = rffi.ptradd(exc, cif.exchange_args[0])
+
+    pnt = rffi.cast(rffi.LONGP, offset_p)
+    pnt[0] = rffi.cast(rffi.LONG, 0x00000020) # SDL_INIT_VIDEO
+    offset_p = rffi.cast(rffi.CCHARP, rffi.ptradd(pnt, rffi.sizeof(rffi.LONG)))
+
+
+    jit_libffi.jit_ffi_call(cif, SDL_Init, exc)
+
+    offset_p = rffi.ptradd(exc, cif.exchange_result)
+    retval = rffi.cast(rffi.LONGP, offset_p)[0]
+
+    print "SDL_Init returned", retval
+
+    lltype.free(exc, flavor='raw')
+
+    return 0
+
+def target(*args):
+    return entry_point, None
+
+if __name__=='__main__':
+sys.exit(entry_point(sys.argv))
