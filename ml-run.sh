@@ -1,4 +1,5 @@
 sudo apt-get install libopenblas-dev
+# liblapack-dev
 pip install numpy
 pip install scipy
 
