@@ -14,3 +14,6 @@ int main()
     (void)  my_function("I accept a string and an integer!\n",(int)(2*2));
     return 0;
 }
+
+- gperf (static perfect hash table)
+- register extensions
