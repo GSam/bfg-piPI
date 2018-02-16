@@ -6,3 +6,4 @@ cd pypy-env
 source bin/activate
 pip install z3-solver
 pip install rpython
+sudo apt-get install libffi-dev
