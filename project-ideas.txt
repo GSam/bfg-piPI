@@ -1,0 +1,5 @@
+- cppyy cling based interop
+- bloom filters
+- embedded Q-Learning
+- semantic similarity tree analysis
+- (syntactic) levenstein distance and automata
