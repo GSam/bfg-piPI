@@ -1,6 +1,7 @@
 sudo apt-get install python-virtualenv -y
 wget https://bitbucket.org/pypy/pypy/downloads/pypy2-v5.9.0-linux64.tar.bz2
 tar xvf pypy2-v5.9.0-linux64.tar.bz2
+rm pypy2-v5.9.0-linux64.tar.bz2
 virtualenv -p pypy2-v5.9.0-linux64/bin/pypy pypy-env
 cd pypy-env
 source bin/activate
