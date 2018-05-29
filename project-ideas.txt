@@ -3,3 +3,5 @@
 - embedded Q-Learning
 - semantic similarity tree analysis
 - (syntactic) levenstein distance and automata
+- compile internal automata as C program and use AFL
+- compile internal automata as C program and use static analysis (e.g. dead code)
