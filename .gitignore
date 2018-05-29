@@ -1,2 +1,3 @@
 pypy-env/
 pypy*linux*
+*.so
