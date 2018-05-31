@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-void myprint(void);
+#include "stdlib.h"
 
 void myprint()
 {
