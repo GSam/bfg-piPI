@@ -2,6 +2,8 @@
 - bloom filters
 - embedded Q-Learning
 - semantic similarity tree analysis
+- semantic word-vectors for selecting useful functions
+- type unification pipelines (map-reduce), with type hints
 - (syntactic) levenstein distance and automata
 - compile internal automata as C program and use AFL
 - compile internal automata as C program and use static analysis (e.g. dead code)
