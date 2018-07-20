@@ -11,9 +11,9 @@ struct bfg_object {
 struct bfg_type_space {
 	uint64_t GUID_high;
 	uint64_t GUID_low;
-	uint32_t index;
-	uint32_t length;
-	uint32_t alloc_length;
+	uint64_t index;
+	uint64_t length;
+	uint64_t alloc_length;
 	struct bfg_object *objects;
 };
 
