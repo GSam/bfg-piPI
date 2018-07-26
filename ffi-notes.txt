@@ -1,3 +1,7 @@
+NOTE: void rpython_startup_code(void)
+This call must be called before you call the binding!
+
+
 from rpython.rlib.entrypoint import entrypoint_highlevel 
 from rpython.rtyper.lltypesystem import rffi, lltype
 from rpython.rtyper.lltypesystem.lloperation import llop
