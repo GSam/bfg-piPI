@@ -8,3 +8,4 @@
 - compile internal automata as C program and use AFL
 - compile internal automata as C program and use static analysis (e.g. dead code)
 - type unification pipelines using markov probabilities
+- embedding of fitness function evaluation into interpreter via BF translation (benefit of hotter code?)
