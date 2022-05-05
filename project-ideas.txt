@@ -15,4 +15,4 @@ Updated 05/05/22:
 - PNG/Bitmap based memory encoding with multi-layer redundancy - RGB values used, but also high level contours generated to reinforce memory (RAM-like memory) 
 - Tree-based concatenative programming: Modifying code with GP in a Scratch-like environment with heavy type hints
 - Tree-based imputation algorithms: Learning type hints based on naming convention or 1-shot learning. Usable on JSON or GP trees.
-- Auto-generated state automata based on type: Using zipper types to create navigational automata
+- Auto-generated state automata based on type: Using zipper types to create navigational automata = type differentiation with umbral calculus on RING of types based on (,) and (|)
