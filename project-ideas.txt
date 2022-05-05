@@ -16,3 +16,4 @@ Updated 05/05/22:
 - Tree-based concatenative programming: Modifying code with GP in a Scratch-like environment with heavy type hints
 - Tree-based imputation algorithms: Learning type hints based on naming convention or 1-shot learning. Usable on JSON or GP trees.
 - Auto-generated state automata based on type: Using zipper types to create navigational automata = type differentiation with umbral calculus on RING of types based on (,) and (|)
+- Wake sleep algorithms based on: https://github.com/GSam/ec using monad and comonads pairs. Waking = Monad + Comonad and Sleeping = Comonad + Monad. Essentially waking unravels a comonad, while sleeping builds a monad.
