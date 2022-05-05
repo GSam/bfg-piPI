@@ -5,7 +5,7 @@ Name has been changed to reflect the fact that all the previous ideas required i
 
 - The Letter P in Greek - impliicit generalized / low-resolution interpreted result
 - A standard capitalization implied by pairing (comma implies toUpper functor in this situation by a Yoneda-like principle)
-- Possible internal intervals e.g. all letters between p to P in ASCII?
+- Possible internal intervals e.g. all letters between p to P in ASCII or functors belonging to this object (objectification)
 
 Core contains the obsolete and never really worked on RPython interpreter:
 
