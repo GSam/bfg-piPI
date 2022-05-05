@@ -21,3 +21,4 @@ Updated 05/05/22:
 - Using algebraic theory and category theory to condense objects into their most natural group / lattice / geometric / automata / field etc.
 
 - Neural networks and manipulating images in more 'compact' forms: https://github.com/GSam/FourierFromSVG Got the idea from watching 3Blue1Brown to decompoe images in a different way. This includes PixelArrays.  
+- Abusing colour theory to map objects into semantically meaningful ways and as a base unit for a list of mutating GP objects.
