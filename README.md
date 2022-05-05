@@ -1,11 +1,11 @@
 # bfg-piPI
 Experiments with rarely-tested or exercised areas of research
 
-Name has been changed to reflect the fact that all the previous ideas required intensely sophisticated type systems (both at bootstrapping stages as well as operationally). The name BFG comes from 'Brain %^&! Garming' as well as (π, Π) piPI which holds three key pieces of information:
+Name has been changed to reflect the fact that all the previous ideas required intensely sophisticated type systems (both at bootstrapping stages as well as operationally). The name BFG comes from 'Brain %^&! Garming' as well as (π, Π) - pi, PI - which holds three key pieces of information:
 
 - The Letter P in Greek
 - A standard capitalization implied by pairing
-- Possible internal intervals
+- Possible internal intervals e.g. all letters between p to P in ASCII?
 
 Core contains the obsolete and never really worked on RPython interpreter:
 
