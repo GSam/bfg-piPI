@@ -7,7 +7,7 @@ Name has been changed to reflect the fact that all the previous ideas required i
 - A standard capitalization implied by pairing (comma implies toUpper functor in this situation by a Yoneda-like principle, type-safe result based on an endofunctor on CHAR)
 - Possible internal intervals e.g. all letters between p to P in ASCII or functors belonging to this object (tentative result via objectification)
 
-The interesting property of this is that I can apply said toUpper endofunctor to pi (of type CHAR[]) and yield a roughly equivalent pairing (pi, PI) where these properties are still held - hence a mirrored relation.
+The interesting property of this is that I can apply said toUpper endofunctor to pi (of type CHAR[]) and yield a roughly equivalent pairing (pi, PI) where these properties are still held - hence a mirrored relation in the subspace of CHAR[] rather than UNICODE[1].
 
 Core contains the obsolete and never really worked on RPython interpreter:
 
