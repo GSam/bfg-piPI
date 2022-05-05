@@ -9,3 +9,7 @@
 - compile internal automata as C program and use static analysis (e.g. dead code)
 - type unification pipelines using markov probabilities
 - embedding of fitness function evaluation into interpreter via BF translation (benefit of hotter code?)
+
+Updated 05/05/22:
+- Git state machine automaton - ML-based search and retrieve with high fidelity
+- PNG/Bitmap based memory encoding with multi-layer redundancy - RGB values used, but also high level contours generated to reinforce memory (RAM-like memory) 
