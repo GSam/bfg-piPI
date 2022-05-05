@@ -3,7 +3,7 @@ Experiments with rarely-tested or exercised areas of research
 
 Name has been changed to reflect the fact that all the previous ideas required intensely sophisticated type systems (both at bootstrapping stages as well as operationally). The name BFG comes from 'Brain %^&! Garming' as well as (π, Π) - pi, PI - which holds three key pieces of information:
 
-- The Letter P in Greek - generalized / low-resolution interpreted result
+- The Letter P in Greek - impliicit generalized / low-resolution interpreted result
 - A standard capitalization implied by pairing (comma implies toUpper functor in this situation by a Yoneda-like principle)
 - Possible internal intervals e.g. all letters between p to P in ASCII?
 
