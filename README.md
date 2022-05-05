@@ -7,7 +7,22 @@ Name has been changed to reflect the fact that all the previous ideas required i
 - A standard capitalization implied by pairing (comma implies toUpper functor in this situation by a Yoneda-like principle, type-safe result based on an endofunctor on CHAR)
 - Possible internal intervals e.g. all letters between p to P in ASCII or functors belonging to this object (tentative result via objectification)
 
-Core contains the obsolete and never really worked on RPython interpreter.
+The interesting property of this is that I can apply said toUpper endofunctor to pi (of type CHAR[]) and yield a roughly equivalent pairing (pi, PI) where these properties are still held - hence a mirrored relation.
+
+Core contains the obsolete and never really worked on RPython interpreter:
+
+Old ideas:
+- cppyy cling based interop
+- bloom filters
+- embedded Q-Learning
+- semantic similarity tree analysis
+- semantic word-vectors for selecting useful functions
+- type unification pipelines (map-reduce), with type hints
+- (syntactic) levenstein distance and automata
+- compile internal automata as C program and use AFL
+- compile internal automata as C program and use static analysis (e.g. dead code)
+- type unification pipelines using markov probabilities
+- embedding of fitness function evaluation into interpreter via BF translation (benefit of hotter code?)
 
 New ideas (Updated 05/05/22):
 - Git state machine automaton - ML-based search and retrieve with high fidelity
