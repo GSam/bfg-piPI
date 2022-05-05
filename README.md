@@ -9,6 +9,21 @@ Name has been changed to reflect the fact that all the previous ideas required i
 
 The interesting property of this is that I can apply said toUpper endofunctor to pi (of type CHAR[]) and yield a roughly equivalent pairing (pi, PI) where these properties are still held - hence a mirrored relation in the subspace of CHAR[] ~ STRING rather than UNICODE[1] ~ SYMBOL.
 
+In this case () implicitly defined a closed quantity like an object interface. π, Π without the braces might mean the infinite sequence π, Π, π, Π, π, Π... which might be better represented canonically as π|Π. The () defines a fixed point e.g. AND (π, Π) SLOT and also a monoid which consists of repeating pairs of <π, Π> which can be unfolded / flatMap into a final concrete sequence. Any array can be mapped into a subsequence of this infinite sequence using various trivial maps.
+
+[?,?,?] -> [ (π, Π), (π, Π), (π, Π) ] CARDINALITY-0
+
+[?,?,?] -> [ π, Π, π, Π, π, Π ] CARDINALITY-1
+
+[?,?,?] -> [ π, Π, π, Π, π, Π, π, Π, π, Π, π, Π] CARDINALITY-N
+
+[?,?,?] -> [ (π, Π, π, Π), (π, Π, π, Π), (π, Π, π, Π)] an example of NEG-CARDINALITY-2 (where the terminals are of order 2 ^ N)
+
+
+[1,2,3] -> [ (π, Π), (π, Π, π, Π), (π, Π, π, Π, π, Π)... ] - FROM-INT
+
+
+
 Core contains the obsolete and never really worked on RPython interpreter:
 
 Old ideas:
