@@ -26,19 +26,6 @@ In this case () implicitly defined a closed quantity like an object interface. Ï
 
 Core contains the obsolete and never really worked on RPython interpreter:
 
-Old ideas:
-- cppyy cling based interop
-- bloom filters
-- embedded Q-Learning
-- semantic similarity tree analysis
-- semantic word-vectors for selecting useful functions
-- type unification pipelines (map-reduce), with type hints
-- (syntactic) levenstein distance and automata
-- compile internal automata as C program and use AFL
-- compile internal automata as C program and use static analysis (e.g. dead code)
-- type unification pipelines using markov probabilities
-- embedding of fitness function evaluation into interpreter via BF translation (benefit of hotter code?)
-
 New ideas (Updated 05/05/22):
 - Git state machine automaton - ML-based search and retrieve with high fidelity
 - Tree-based concatenative programming: Modifying code with GP in a Scratch-like environment with heavy type hints
