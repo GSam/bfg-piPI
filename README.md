@@ -39,6 +39,7 @@ New ideas (Updated 05/05/22):
 - PNG/Bitmap based memory encoding with multi-layer redundancy - RGB values used, but also high level contours / heatmaps generated to reinforce memory (RAM-like memory)
 - Neural networks and manipulating images in more 'compact' forms: https://github.com/GSam/FourierFromSVG Got the idea from watching 3Blue1Brown to decompose images in a different way. This includes PixelArrays: https://github.com/GSam/bfg-piPI/blob/master/External%20Slides/PixelArrays--20161026--MIT.pdf
 - Abusing colour theory to map objects into semantically meaningful ways and as a base unit for a list of mutating GP objects.
+- 'Continuous' or non-discrete optics used for manipulating symmetric objects i.e. groups
 
 Old ideas:
 - cppyy cling based interop
