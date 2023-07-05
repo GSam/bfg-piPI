@@ -30,7 +30,7 @@ New ideas (Updated 05/05/22):
 - Git state machine automaton - ML-based search and retrieve with high fidelity
 - Tree-based concatenative programming: Modifying code with GP in a Scratch-like environment with heavy type hints
 - Tree-based imputation algorithms: Learning type hints based on naming convention or 1-shot learning. Usable on JSON or GP trees.
-- Auto-generated state automata based on type: Using zipper types to create navigational automata = type differentiation with umbral calculus on RING of types based on (,) and (|)
+- Auto-generated state automata based on type: Using zipper types to create navigational automata = type differentiation with umbral calculus on (polynomial) RING of types based on (,) and (|)
 - Wake sleep algorithms based on: https://github.com/GSam/ec using monad and comonads pairs. Waking = Monad + Comonad and Sleeping = Comonad + Monad. Essentially waking unravels a comonad, while sleeping builds a monad. NOTE: They have to be invertible so it can generate self-opposition.
 - Monoidal (or applicative) programming as well as comonoidal (non-zero). Using forgetful functors and their inverse to simplify algebraic objects into their core operations (or core combinators of actions).
 
