@@ -1,3 +1,5 @@
+# Fun with free/cofree (scalaz)
+
 ## sbt project compiled with Scala 3
 
 ### Usage
