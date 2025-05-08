@@ -1,3 +1,6 @@
 [submodule "core"]
 	path = core
 	url = https://github.com/GSam/bfg-pypy-core.git
+[submodule "galois-fsm"]
+	path = galois-fsm
+	url = https://github.com/GSam/bfg-galois-fsm
