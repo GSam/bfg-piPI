@@ -1,5 +1,12 @@
 # Fun with free/cofree (cats)
 
+From the following pages:
+
+* https://gist.github.com/ChrisPenner/eb6a4efa0d57f39dc5f3c7bb2d31c2d7
+* https://chrispenner.ca/posts/representable-discrimination
+
+* https://iagoleal.com/posts/representable-memoize/
+
 ## sbt project compiled with Scala 3
 
 ### Usage
